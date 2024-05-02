@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+</head>
+<body>
+    {% for foydalanuvchi in foydalanuvchilar %}
+        <a href="{% url 'user_info_page' foydalanuvchi.name %}"><h2>{{foydalanuvchi}}</h2></a>
+    {% endfor %}
+</body>
+</html>
